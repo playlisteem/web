@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121481998-1"></script>
+
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-121481998-1');
+	</script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAbHXZWvmwq8CHRtrRFWbxYcj__TpY9uq0",
+	    authDomain: "playlisteem.firebaseapp.com",
+	    databaseURL: "https://playlisteem.firebaseio.com",
+	    projectId: "playlisteem",
+	    storageBucket: "playlisteem.appspot.com",
+	    messagingSenderId: "852849870801"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+
+	<!-- COMMON TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="subject" content="playlisteem">
+	<meta name="author" content="kimtoma">
+	<meta name="classification" content="html">
+	<meta name="keywords" content="playlisteem, playlist, music, steem, steemit, crypto">
+	<meta name="robots" content="ALL">
+	<title>playlisteem</title>
+	
+	<!-- Search Engine -->
+	<meta name="description" content="Curated music playlists powered by steemit">
+	<meta name="image" content="https://playlisteem.com/img/logo_800x800.jpg">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="playlisteem">
+	<meta itemprop="description" content="Curated music playlists powered by steemit">
+	<meta itemprop="image" content="https://playlisteem.com/img/logo_800x800.jpg">
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="playlisteem">
+	<meta name="twitter:description" content="Curated music playlists powered by steemit">
+	<meta name="twitter:site" content="@playlisteem">
+	<meta name="twitter:creator" content="@playlisteem">
+	<meta name="twitter:image:src" content="https://playlisteem.com/img/twitter_1024x512.jpg">
+	
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta property="og:title" content="playlisteem">
+	<meta property="og:description" content="Curated music playlists powered by steemit">
+	<meta property="og:image" content="https://playlisteem.com/img/og_1200x630.jpg">
+	<meta property="og:image:alt" content="playlisteem logomark">
+	<meta property="og:url" content="https://playlisteem.com">
+	<meta property="og:site_name" content="playlisteem">
+	<meta property="og:locale" content="en_US">
+	<meta property="fb:admins" content="1196226797">
+	<meta property="fb:app_id" content="186391462046753">
+	<meta property="og:type" content="website">
+	
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://playlisteem.com/img/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://playlisteem.com/img/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://playlisteem.com/img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://playlisteem.com/img/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="180x180” href="https://playlisteem.com/img/apple-touch-icon-180x180.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://playlisteem.com/img/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://playlisteem.com/img/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://playlisteem.com/img/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://playlisteem.com/img/apple-touch-icon-152x152.png" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#05d6a9">
+	<link rel="icon" type="image/png" href="https://playlisteem.com/img/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="https://playlisteem.com/img/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="https://playlisteem.com/img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="https://playlisteem.com/img/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="https://playlisteem.com/img/favicon-128.png" sizes="128x128" />
+	<meta name="apple-mobile-web-app-title" content="playlisteem">
+	<meta name="application-name" content="playlisteem”/>
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#05D6A9" />
+	<meta name="msapplication-TileImage" content="https://playlisteem.com/img/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="https://playlisteem.com/img/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="https://playlisteem.com/img/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="https://playlisteem.com/img/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="https://playlisteem.com/img/mstile-310x310.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet"> 	<!-- 구글 웹 폰트 사용  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- 구글 웹 폰트 아이콘 사용 -->
+
+	<style media="screen">
+		body { background: white; color: black; font-family:'Comfortaa', cursive; margin: 0; padding: 0; }
+		body { border-top: 16px solid #05D6A9; }
+		#message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+		#message h2 { color: black; font-weight: bold; font-size: 24px; margin: 0 0 8px; }
+		#message h1 { font-size: 50px; font-weight: 300; color: #05D6A9; margin: 0 0 16px; }
+		#message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+		#message a { text-decoration: none; color: #05D6A9; }
+		#playlist { background: white; max-width: 360px; auto 16px; padding: 32px 24px; margin: 0 0 18px; border-radius: 8px; box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24);}
+		#playlist p {color:darkgray; font-size: 13px;}
+		#playlist i {text-align: -webkit-auto;}
+		#submit { background: white; max-width: 360px; margin: 0 0 18px; padding: 32px 24px; }
+		#submit a { text-decoration: none; color: white; }
+		#load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+		ul{list-style:none; padding:0px;}
+		.button {
+	    background-color: #05D6A9;
+	    border: none;
+	    color: white;
+	    padding: 10px 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    font-size: 16px;
+	    margin: 0px 0px;
+	    cursor: pointer;
+	    border-radius: 20px;
+	    -webkit-transition-duration: 0.4s; /* Safari */
+	    transition-duration: 0.4s;
+		}
+		.button1:hover{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 10px 20px 0 rgba(0,0,0,0.19);
+		}
+	@media (max-width: 600px) {
+		body, #message { margin-top: 0; background: white; box-shadow: none; }
+		body { border-top: 16px solid #05D6A9; }
+	}
+	</style>
+
+  </head>
+  <body>
+    <div id="message">
+      <img width="48px" height="48px"src="img/logo_circle.png"><h1>playlisteem</h1>
+      <p>Curated music playlists powered by steemit</p>
+
+		  <div id="submit">
+				  <a target="_blank" class="button button1" href="https://goo.gl/forms/RW4X517D1o0SjOBJ3">Submit your playlist</a>
+		  </div>
+
+      <div id="playlist">
+      <h2>Queen Forever</h2>
+        <ul class="queen-forever">
+          <p>Queen, their music, and their extraordinary lead singer Freddie Mercury, who defied stereotypes and shattered convention to become one of the most beloved entertainers on the planet.</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@playlisteem/playlisteem-for-queen-for-freddie"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+      <div id="playlist">
+      <h2>Reggae Classcis 🇯🇲</h2>
+        <ul class="reggae-classcis 🇯🇲">
+	      <p>Classic Reggae music from Bob Marley, Jimmy Cliff, Toots & The Maytals, and many more...</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@playlisteem/playlisteem-reggae-classcis"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+      <div id="playlist">
+      <h2>Classical Essentials 🎹</h2>
+        <ul class="classical-essentials">
+	       <p>44 highlight tracks from 44 essential classical recordings, covering a wide range of composers, eras and styles. Best starting point for those who are new to the fascinating world of classical music.</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@playlisteem/playlisteem-classical-essentials"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+      <div id="playlist">
+      <h2>Acoustic Morning</h2>
+        <ul class="acoustic-morning">
+	      <p>Rise & shine with the perfect blend of folk and acoustic.</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@playlisteem/playlisteem-acoustic-morning"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+      <div id="playlist">
+      <h2>Korean Hip-Hop 🇰🇷</h2>
+        <ul class="korean-hip-hop">
+	      <p>Real Korean vibes right here. Hip-Hop from the South Korea. 🇰🇷</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@playlisteem/playlisteem-korean-hip-hop"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+      <div id="playlist">
+      <h2>Breakup Songs Essentials 😢</h2>
+        <ul class="breakup-songs-essentials">
+	      <p>The songs you need to hear when you break up with lovers or loved ones...</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@playlisteem/playlisteem-breakup-songs-essentials"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+      <div id="playlist">
+      <h2>Workout 💪</h2>
+        <ul class="workout">
+	      <p>Great pop songs to keep your workout fresh.</p>
+          <li><a target="_blank" href="https://steemit.com/playlisteem/@kimtoma/playlisteem-workout"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+        </ul>
+      </div>
+
+        <div id="playlist">
+	      <h2>Pride Classics 🏳️‍🌈</h2>
+		      <ul class="pride-classics">
+			      <p>The revolutioaries, the allies, and the just plain fabulous : these flawless tracks are beyond perfect for Pride.</p>
+			      <li><a target="_blank" href="https://steemit.com/playlisteem/@kimtoma/playlisteem-pride-classics"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+		      </ul>
+	      </div>
+
+        <div id="playlist">
+	      <h2>Tropical Haus 🌴🕶</h2>
+		      <ul class="tropical-haus">
+			      <p>True tropical house melody for the coastline.</p>
+			      <li><a target="_blank" href="https://steemit.com/music/@kimtoma/playlisteem-tropical-haus"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+		      </ul>
+	      </div>
+
+      	<div id="playlist">
+	      <h2>Jazz & Rain 🎷🌧</h2>
+		      <ul class="jazz&rain">
+			      <p>Jazz playlist for rainyday... 🎷🎹🌧</p>
+			      <li><a target="_blank" href="https://steemit.com/music/@kimtoma/playlisteem-jazz-and-rain"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+		      </ul>
+	      </div>
+
+	      <div id="playlist">
+	      <h2>Summer Breeze 🏖</h2>
+		      <ul class="summer-breeze">
+			      <p>Songs of the summer</p>
+			      <li><a target="_blank" href="https://steemit.com/music/@felixchc/songs-of-the-summer-music-play-list"><i class="material-icons">play_circle_filled</i>Listen & Upvote</a></li>
+		      </ul>
+	      </div>
+
+	  <p>created by <a href="https://steemit.com/@playlisteem">@playlisteem</a></br>with ❤️ for music & steemit community</p>
+    </div>
+  </body>
+
+</html>
